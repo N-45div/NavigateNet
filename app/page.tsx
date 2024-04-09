@@ -4,6 +4,9 @@ import { motion } from "framer-motion";
 import { LampContainer } from "../components/ui/lamp";
 import { NavbarDemo } from "@/components/Navbar";
 import { TypewriterEffectSmooth } from "../components/ui/typewriter-effect";
+import { GlobeDemo } from '../components/Globe';
+
+
 export default function LampDemo() {
   const words = [
     {
@@ -31,12 +34,9 @@ export default function LampDemo() {
         The road to freedom starts from here
       </p>
       <TypewriterEffectSmooth words={words} />
-      <div className="flex flex-col md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4">
-        <button className="w-40 h-10 rounded-xl bg-white text-black border border-black  text-sm">
-          Try Now !
-        </button>
-      </div>
+
     </div>
+    <GlobeDemo/>
       <LampContainer>
       <motion.h1
         initial={{ opacity: 0.5, y: 100 }}
