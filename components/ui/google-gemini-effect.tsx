@@ -43,6 +43,10 @@ export const GoogleGeminiEffect = ({
       <p className="text-lg md:text-7xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
         {title || `NavigateNet`}
       </p>
+      <p className="text-xs md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto">
+        {description ||
+          `A beautiful search engine that enhances search accuracy by querying semantically related results.`}
+      </p>
       <div className="flex flex-col items-center justify-center h-[40rem]  ">
      
       <TypewriterEffectSmooth words={words} />
