@@ -43,9 +43,12 @@ export const GoogleGeminiEffect = ({
       <p className="text-lg md:text-7xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
         {title || `NavigateNet`}
       </p>
-      <div className="text-center  text-neutral-400 mt-4 max-w-lg mx-auto">
-            <TypewriterEffectSmooth words={words} />
-      </div>
+      <div className="flex flex-col items-center justify-center h-[40rem]  ">
+      <p className="text-neutral-600 dark:text-neutral-200 text-xs sm:text-base  ">
+        The road to freedom starts from here
+      </p>
+      <TypewriterEffectSmooth words={words} />
+    </div>
    
       <svg
         width="1440"
