@@ -2,7 +2,7 @@
 import { cn } from "@/utils/cn";
 import { motion, MotionValue } from "framer-motion";
 import React from "react";
-
+import { TypewriterEffectSmooth } from "./typewriter-effect";
 const transition = {
   duration: 0,
   ease: "linear",
@@ -19,15 +19,33 @@ export const GoogleGeminiEffect = ({
   description?: string;
   className?: string;
 }) => {
+    const words = [
+        {
+          text: "GeniusGenie",
+        },
+        {
+          text: "and the",
+        },
+        {
+          text: "TechnoTinker",
+        },
+        {
+          text: "mix of",
+        },
+        {
+          text: "brillance.",
+          className: "text-blue-500 dark:text-blue-500",
+        },
+      ];
+    
   return (
     <div className={cn("sticky top-80", className)}>
       <p className="text-lg md:text-7xl font-normal pb-4 text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-100 to-neutral-300">
         {title || `NavigateNet`}
       </p>
-      <p className="text-xs md:text-xl font-normal text-center text-neutral-400 mt-4 max-w-lg mx-auto">
-        {description ||
-          `Search the best sites like never before !`}
-      </p>
+      <div className="text-center  text-neutral-400 mt-4 max-w-lg mx-auto">
+            <TypewriterEffectSmooth words={words} />
+      </div>
    
       <svg
         width="1440"
